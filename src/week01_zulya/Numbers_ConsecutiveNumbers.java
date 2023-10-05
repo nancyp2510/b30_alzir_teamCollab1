@@ -13,7 +13,7 @@ public class Numbers_ConsecutiveNumbers {
         //% 5 replace with Coders
 
 
-        for (int i = 0; i <= N; i++) {
+        for (int i = 1; i <= N; i++) {
             if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
                 System.out.println("CodilityTestCoders");
             } else if (i % 2 == 0 && i % 3 == 0) {
