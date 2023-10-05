@@ -1,4 +1,4 @@
-package week3;
+package week3_nancy;
 
 public class PrimeNumber {
     // Prime number are numbers greater than 1 AND only divisible for 1 and itself (divisible for more nums is not primeNumber)
