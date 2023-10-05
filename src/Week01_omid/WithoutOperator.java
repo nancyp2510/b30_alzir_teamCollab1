@@ -1,4 +1,4 @@
-package Week01;
+package Week01_omid;
 
 import java.util.Scanner;
 
