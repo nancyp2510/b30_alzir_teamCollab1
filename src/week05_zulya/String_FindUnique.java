@@ -21,17 +21,17 @@ public class String_FindUnique {
 
         for (int i = 0; i < str1.length(); i++) {
 
-            char currentChar = str1.charAt(i);
+           // char currentChar = str1.charAt(i);
             boolean isUnique = true;
 
             for (int j = 0; j < str1.length(); j++) {
-                if (i != j && currentChar == str1.charAt(j)) {
-                    isUnique = false;
-                    break;
+                if (i != j && str1.charAt(i) == str1.charAt(j)) {    //index number does not equal, but value of index is equal
+                    isUnique = false; // if condition is not met -->then
+                    break;  // --> we
                 }
             }
-            if (isUnique) {
-                unique += currentChar;
+            if (isUnique) {   // once condition  is met and it's true then
+                unique += str1.charAt(i);   // value of index i added to string unique
             }
         }
 
