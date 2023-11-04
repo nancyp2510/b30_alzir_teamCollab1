@@ -1,4 +1,4 @@
-package week06_nancy;
+package week6_nancy;
 
 public class SumOfDigitInString {
 

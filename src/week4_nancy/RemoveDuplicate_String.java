@@ -1,4 +1,4 @@
-package week04_nancy;
+package week4_nancy;
 
 public class RemoveDuplicate_String {
     public static void main(String[] args) {

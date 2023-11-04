@@ -1,4 +1,4 @@
-package week04_nancy;
+package week4_nancy;
 
 public class FrequencyOfCharInString {
 public static void main (String[] args){
