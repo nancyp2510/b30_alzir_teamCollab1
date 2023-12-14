@@ -1,30 +1,24 @@
 package nancy_week11;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
 public class FrequencyOfCharInString {
     public static void main (String[] args){
         String str = "aaabbbbbbbbcccddt";
         System.out.println("frequencyOfChar(str) = " + frequencyOfChar(str));
 
     }
-    public static String frequencyOfChar (String str){
-        String result = "";
-        int frequency = 0;
-        for(int i =0; i < str.length(); i ++){
-            char each = str.charAt(i);
-            //int frequency = 0;
-            for(int j = 0;j < str.length();j++){
-                if(str.charAt(j) == each){
-                    frequency++;}
-                }
+    public static Map<String,Integer> frequencyOfChar (String str){
+        Map<String,Integer> mapOfCharFrequency = new HashMap<>();
 
-            if(!result.contains(each+"")){
-                result += each+"" + frequency ;
-            }
+        for(String each : str.split("")){
+            int frequency = Collections.frequency(Arrays.asList(str.split("")), each);
+            mapOfCharFrequency.put(each,frequency);
         }
-
-
-
-        return result;
+        return mapOfCharFrequency;
     }
 }
 /*
